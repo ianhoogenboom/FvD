@@ -2,26 +2,104 @@
 
 /* FONTS */
 @font-face {
-	font-family: 'eenfont';
-	src: url('../fonts/eenfont.woff2') format('woff2'),
-			 url('../fonts/eenfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'eenfont';
+    src: url('../fonts/eenfont.woff2') format('woff2'),
+        url('../fonts/eenfont.woff') format('woff'),
+        url('../fonts/heineken.woff2') format('woff2'),
+        url('../fonts/heineken.woff') format('woff'),
+        url('../fonts/plutosansheavy.woff2') format('woff2'),
+        url('../fonts/plutosansheavy.woff') format('woff');
+
+    font-weight: normal;
+    font-style: normal;
 
 }
 
 
 /* ALGEMENE STYLING */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
 body {
-  font-family:eenfont, sans-serif;
-  color:#111;
-  background-color:#eee;
+
+    font-family: eenfont, sans-serif;
+    color: #111;
+    background-color: white;
+}
+
+main {
+    --whiteSpace: clamp(10em, 4vw, 1em);
+    --sectionSize: 25em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, var(--sectionSize));
+    grid-gap: var(--whiteSpace);
+    justify-content: center;
+    align-content: flex-start;
+}
+
+section {
+    position: relative;
+    height: var(--sectionSize);
+    text-align: center;
+    background-color: white;
+    border-radius: 3.5rem;
+    background-color: #048743;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heineken h1 {
+    font-family: heineken;
+    font-size: 3em;
+    color: transparent;
+    -webkit-text-stroke: .5px #ffffff;
+}
+
+.heineken h1:hover {
+
+    animation-name: vloeibaar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes vloeibaar {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 44%, 15% 43%, 29% 51%, 39% 60%, 53% 63%, 68% 60%, 82% 55%, 100% 52%, 100% 100%, 0 100%);
+
+    }
+
+    50% {
+        clip-path: polygon(0 62%, 13% 55%, 26% 53%, 42% 55%, 54% 54%, 66% 46%, 82% 38%, 100% 36%, 100% 100%, 0 100%);
+
+    }
+
+}
+
+section:nth-of-type(2) {
+    position: relative;
+    height: var(--sectionSize);
+    text-align: center;
+    background-color: white;
+    border-radius: 3.5rem;
+    background-color: #eee;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dominos h1 {
+    font-family: plutosansheavy;
+    font-size: 3em;
+    color: #0078AC;
 }
 
 
 /* BRAND STYLING */
-
