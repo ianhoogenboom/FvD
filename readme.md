@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** -jouw naam-
+**Auteur:** -Ian Hoogenboom-
 
 **Het werk:** [opdracht 1](opdracht1/index.html) en [opdracht 2](opdracht2/index.html)
 
@@ -7,22 +7,29 @@
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
 
+### Week 1
 
-## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+In de eerste week hebben we gewerkt aan een paar oefeningen over animeren van css en custom properties. Tijdens de les had ik dit nog niet af, dus ik heb het na de les afgemaakt.
+De oefeningen waren niet heel moeilijk en ik kon het zonder grote probleem afronden.
+
+### Week 2
+
+Ter voorbereiding van deze week moesten we storyboards van de eerste opdracht op miro plaatsen.
+Door het in kleine stappen voor te bereiden wordt het uiteindelijk makkelijker om de logo's te animeren. Ik heb gekozen voor het logo van Heineken en Domino's.
+
+<img src="../images/storyboard1" alt="">
+
 
 
 
 ## Je 'posts' (je code-dagboek)
 
-Je procesverslag is een soort dagboek.
-Bij elk voortgangsgesprek en het eindgesprek voeg je een ‘post’ aan je dagboek toe.
+Voortgangsgesprek 1 post:
 
-In zo’n ‘post’ neem je op:
-- Wat je van plan was
-- Je werk zo ver
-- Wat er goed ging
-- Wat er lastig is
-- Wat je plannen zijn
+In dit voortgangsgesprek was ik van plan om vragen te stellen over een animatie van het heineken logo (vol vloeien van letters). Ik was hier al aan begonnen maar kwam er niet helemaal uit. Daarnaast was ik begonnen met het grid waar de animaties in komen en heb ik dmv fontface gedownloade fonts in mijn code geplaatst. Dit was allemaal niet perse makkelijk maar was in principe goed te doen. Voor het volgende gesprek ben ik van plan om verder te werken met het inschuiven van de letters en probeer ik zover mogelijk te komen met het eerste logo.
+
+
+## Bronnenlijst
+1. - https://www.fontsmarket.com/font-download/pluto-sans-heavy -
+2. - https://allyourfonts.com/font/heineken-font/ -
+3. - https://bennettfeely.com/clippy/ -
