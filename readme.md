@@ -17,7 +17,8 @@ De oefeningen waren niet heel moeilijk en ik kon het zonder grote probleem afron
 Ter voorbereiding van deze week moesten we storyboards van de eerste opdracht op miro plaatsen.
 Door het in kleine stappen voor te bereiden wordt het uiteindelijk makkelijker om de logo's te animeren. Ik heb gekozen voor het logo van Heineken en Domino's.
 
-<img src="../images/storyboard1" alt="">
+<img src="opdracht1/images/storyboard1.png" alt="">
+<img src="opdracht1/images/storyboard2.png" alt="">
 
 
 
