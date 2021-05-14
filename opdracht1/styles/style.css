@@ -28,6 +28,7 @@ body {
     font-family: eenfont, sans-serif;
     color: #111;
     background-color: white;
+
 }
 
 main {
@@ -50,23 +51,166 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+
+
 
 }
 
 .heineken h1 {
     font-family: heineken;
+    position: absolute;
     font-size: 3em;
     color: transparent;
     -webkit-text-stroke: .5px #ffffff;
+    background-image: radial-gradient(white 50%, transparent 50%);
+    background-size: 300% 300%;
+    background-position:center -14%;
+    background-repeat: no-repeat;
+
+    background-clip:text;
+    -webkit-background-clip:text;
+
+    animation-name: golfjeAni;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+
 }
 
+/*
+vol 24%
+leeg -14%
+*/
+
+@keyframes golfjeAni {
+    0%{
+        background-position:center -14%
+    }
+    50%{
+        background-position:center 24%
+    }
+    100%{
+        background-position:center 24%
+    }
+}
+
+@keyframes golfjeAnister {
+    0%{
+        background-position:center -19%
+    }
+    50%{
+        background-position:center 24%
+    }
+    100%{
+        background-position:center 22%
+    }
+}
+
+.outside,
+.inside {
+    position: absolute;
+    top: -3.5em;
+    /*    right: -15em*/
+
+}
+
+.outside {
+    position: relative;
+    width: 4em;
+    height: 4em;
+    background: white;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+
+}
+
+.inside {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: #048743;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+         background-image: radial-gradient(crimson 50%, transparent 50%);
+    background-size: 300% 300%;
+    background-position: center -19%;
+
+    animation-name:golfjeAnister;
+    animation-duration: 10s;
+    animation-iteration-count:1;
+
+
+
+}
+
+/*
+vol 22%
+leeg -19%
+*/
+
+div:nth-of-type(1):hover {
+    animation-name: ster;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
+}
+
+/*
 .heineken h1:hover {
 
     animation-name: vloeibaar;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+
+}
+*/
+
+h1:nth-of-type(1):hover {
+    animation-name:swoosh;
+    animation-duration: 2s;
+    animation-iteration-count:1;
 }
 
+@keyframes ster {
+    0% {
+        transform: translatex(18em) rotatey(1turn);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes swoosh {
+    0% {
+        transform: translateX(-14em) rotatey(1turn)
+    }
+
+    50% {
+        transform: none;
+
+    }
+
+    51% {
+      clip-path: polygon(0% 44%, 15% 43%, 29% 51%, 39% 60%, 53% 63%, 68% 60%, 82% 55%, 100% 52%, 100% 100%, 0 100%);
+
+    }
+    100% {
+
+         clip-path: polygon(0 62%, 13% 55%, 26% 53%, 42% 55%, 54% 54%, 66% 46%, 82% 38%, 100% 36%, 100% 100%, 0 100%);
+
+    }
+}
+
+
+
+
+
+/*
 @keyframes vloeibaar {
 
     0%,
@@ -81,6 +225,7 @@ section {
     }
 
 }
+*/
 
 section:nth-of-type(2) {
     position: relative;
